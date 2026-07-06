@@ -1,6 +1,7 @@
 import React from 'react';
 import { NavLink, useNavigate } from 'react-router-dom';
 import { useAuthStore } from '../../store/authStore.js';
+import logo from '../../assets/logo.png';
 import {
   LayoutDashboard,
   Package,
@@ -33,11 +34,9 @@ const Sidebar = () => {
     <aside className="fixed top-0 left-0 z-40 w-[260px] h-screen bg-white border-r border-primary-200 flex flex-col justify-between">
       {/* Top Brand Logo */}
       <div>
-        <div className="px-6 py-5 border-b border-primary-100 text-center">
-          <h1 className="text-3xl font-black text-primary font-playfair tracking-wide leading-none">
-            Girly
-          </h1>
-          <p className="text-xs uppercase tracking-widest font-dancing text-primary-dark mt-1 font-bold">
+        <div className="px-6 py-5 border-b border-[#FFCCE5] text-center flex flex-col items-center">
+          <img src={logo} alt="Girly Logo" className="h-10 max-w-full object-contain" />
+          <p className="text-[10px] uppercase tracking-widest font-sans text-primary-dark mt-2 font-bold opacity-80">
             Admin Panel
           </p>
         </div>

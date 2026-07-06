@@ -6,6 +6,7 @@ import { Eye, EyeOff } from 'lucide-react';
 import Button from '../components/ui/Button.jsx';
 import Card from '../components/ui/Card.jsx';
 import toast from 'react-hot-toast';
+import logo from '../assets/logo.png';
 
 const Login = () => {
   const { login, admin, checkAuth } = useAuthStore();
@@ -57,10 +58,8 @@ const Login = () => {
       >
         <div className="text-center mb-8">
           {/* Logo */}
-          <h1 className="text-4xl font-black text-primary font-playfair tracking-wide leading-none">
-            Girly
-          </h1>
-          <p className="text-lg font-bold font-dancing text-primary-dark mt-1">
+          <img src={logo} alt="Girly Logo" className="h-16 max-w-full object-contain mx-auto" />
+          <p className="text-sm font-bold font-sans tracking-widest uppercase text-primary-dark mt-2">
             Admin Panel
           </p>
           <h2 className="text-lg font-semibold text-gray-800 mt-4 font-poppins">
